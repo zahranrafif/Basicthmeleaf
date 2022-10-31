@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Input Biodata</title>
+</head>
+<body>
+	<div class="container" style="margin-top: 10px;">
+		<div class="row"
+			style="border: 1px darkgrey solid; border-radius: 10px; width: 50%; margin: 0 auto; padding: 20px;">
+			<div class="col-sm-12">
+				
+                                <hr/>
+				<h2 class="myclass">Data Mahasiswa TI-UMY</h2>
+                                <hr/>
+				<form action="/save" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+						<label>Nama Lengkap</label> 
+                                                <input type="text" class="form-control" name="name" placeholder="Masukkan nama">
+					</div>
+                                    
+                                        <div class="form-group">
+                                                <label>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" name="tanggal" placeholder="Masukkan Tanggal Lahir" required>
+                                        </div>
+					
+                                        <div class="form-group">
+                                                <label>Jenis Kelamin</label> <br/>
+                                                <input type="radio" id="gender" name="kelamin" value="Laki-Laki"/> Laki-Laki <br/>   
+                                                <input type="radio" id="gender" name="kelamin" value="Perempuan"/> Perempuan <br/>   
+                                        </div>
+                                    
+                                        <div class="form-group">
+                                                <label>Nomor Hp</label> <br/>
+                                                <input type="text" class="form-control" name="nohp" placeholder="Masukkan Nomor Hp"/>
+                                        </div>
+                                    
+                                        <div class="form-group">
+                                                <label>Alamat</label>
+                                                <input type="text" class="form-control" name="address" placeholder="Masukkan Alamat" required>
+                                        </div>
+                                    
+					<div class="form-group">
+						<label>Photo</label> 
+						<input type="file" class="form-control" name="photo" placeholder="Masukkan Photo">
+					</div>
+					
+					<button type="submit" class="btn btn-primary">Simpan</button>
+					<button type="reset" class="btn btn-primary">Batal</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
